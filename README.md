@@ -19,6 +19,8 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 chsh -s $(which zsh)
 ```
 
+Reboot your machine after you've done this.
+
 ## Clone this repo
 
 I prefer to keep this repo in a `~/zshrc` directory
