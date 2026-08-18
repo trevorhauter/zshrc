@@ -105,16 +105,6 @@ source $ZSH/oh-my-zsh.sh
 #
 #
 
-export PATH="/Users/trevorhauter/Library/Python/3.9/bin:$PATH"
-export PATH="$HOME/Applications/zig:$PATH"
-export PATH="$HOME/.local/bin:$PATH"
-
-
-if [[ "$OSTYPE" == "darwin"* ]]; then
-    eval "$(/opt/homebrew/bin/brew shellenv)"
-    JAVA_HOME="$(brew --prefix openjdk)/libexec/openjdk.jdk/Contents/Home"
-fi
-
 # Basic aliases
 alias dl='cd ~/Downloads'
 alias code='cd ~/Code'
@@ -138,6 +128,6 @@ alias undocommit="git reset HEAD~1 --soft"
 
 
 # Include local aliases or env variables
-if [ -f ./.local ]; then
-    source ./.local
+if [ -f ./.zshlocal ]; then
+    source ./.zshlocal
 fi
